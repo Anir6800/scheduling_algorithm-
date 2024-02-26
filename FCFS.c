@@ -26,10 +26,10 @@ int avgtime( int proc[], int n, int burst_time[]) {
    for ( i=0; i<n; i++) {
       total_wt = total_wt + wait_time[i];
       total_tat = total_tat + tat[i];
-      printf(" %d\t  %d\t\t %d \t%d", i+1, burst_time[i], wait_time[i], tat[i]);
+      printf(" \n %d\t  %d\t\t %d \t%d\n", i+1, burst_time[i], wait_time[i], tat[i]);
    }
-   printf("Average waiting time = %f", (float)total_wt / (float)n);
-   printf("Average turn around time = %f", (float)total_tat / (float)n);
+   printf("\nAverage waiting time = %f", (float)total_wt / (float)n);
+   printf("\nAverage turn around time = %f", (float)total_tat / (float)n);
    return 0;
 }
 int main() {
